@@ -1,7 +1,16 @@
 import "./App.css";
+import { Switch, Route, Link } from "react-router-dom";
+import { Layout, Typography, Space } from "antd";
+// import { Exchanges, Homepage, News, Cryptocurrencies, CryptoDetails, Navbar } from './components';
 
 function App() {
-  return <div className="app">Hello</div>;
+  return (
+    <div className="app">
+      <div className="navbar"></div>
+      <div className="main"></div>
+      <div className="footer"></div>
+    </div>
+  );
 }
 
 export default App;
