@@ -5,13 +5,11 @@ const cryptoHeaders = {
   "x-rapidapi-key": process.env.REACT_APP_KEY,
 };
 
-const baseUrl = "https://coinranking1.p.rapidapi.com";
-
 const createRequest = (url) => ({ url, headers: cryptoHeaders });
 
 export const cryptoApi = createApi({
   reducerPath: "cryptoApi",
-  baseQuery: fetchBaseQuery({ baseUrl }),
+  baseQuery: fetchBaseQuery({ baseUrl: process.env.REACT_APP_BASE_URL }),
   endpoints: (builder) => ({
     getCryptos: builder.query({
       query: () => createRequest("/coins"),
