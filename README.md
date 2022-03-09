@@ -1,3 +1,3 @@
 # jsmcrypto
 
-00:53:32 Cryptocurrencies
+1:50:32 Cryptocurrencies
